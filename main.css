@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto' arial, sans-serif;
+}
+
+.hero-heading {
+    color: #454343;
+    font-size: 64px;
+}
+
+.heading {
+    color: #454343;
+}
+
+.gradient-text {
+    background-image: linear-gradient(to right, #00A1C5 70%, #004E5F);
+    color: transparent;
+    -webkit-background-clip: text;
+    /* For Safari/Chrome */
+    background-clip: text;
+}
+
+.gradient-button {
+    background-image: linear-gradient(to right, #00A1C5 100%, #004E5F) !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+.card {
+    border: none;
+}
+
+@media (max-width: 760px) {
+    .hero-heading {
+        font-size: 48px;
+    }
+}
