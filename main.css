@@ -1,14 +1,33 @@
 body {
     font-family: 'Roboto' arial, sans-serif;
+    background-color: #f9f9f9
+}
+
+h1 {}
+
+.section {
+    padding: 48px;
+}
+
+p.subtitle {
+    line-height: 2.3;
+    width: 75%;
+    margin: 0;
+    color: #454343;
 }
 
 .hero-heading {
     color: #454343;
-    font-size: 64px;
+    font-size: 84px;
 }
 
 .heading {
     color: #454343;
+}
+
+.subtitle {
+    width: 75%;
+    margin: auto;
 }
 
 .gradient-text {
@@ -34,8 +53,64 @@ body {
     border: none;
 }
 
-@media (max-width: 760px) {
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.instagram {
+    background-color: #E1306C;
+}
+
+.instagram:hover {
+    background-color: #C13584;
+}
+
+/* Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    /* Styles for phones */
+    .hero-heading {
+        font-size: 50px;
+    }
+
+    p.subtitle {
+        width: 100%;
+
+    }
+
+    .section {
+        padding: 16px;
+    }
+}
+
+/* Medium devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Styles for landscape phones */
+}
+
+/* Large devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Styles for tablets */
     .hero-heading {
         font-size: 48px;
+    }
+
+    p.subtitle {
+        width: 100%;
+
     }
 }
